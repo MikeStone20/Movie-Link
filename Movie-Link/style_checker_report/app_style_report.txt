@@ -1,0 +1,151 @@
+app.py:5:1: F401 'random' imported but unused
+app.py:6:1: F401 'smtplib' imported but unused
+app.py:6:1: F401 'ssl' imported but unused
+app.py:6:15: E401 multiple imports on one line
+app.py:13:1: F403 'from model import *' used; unable to detect undefined names
+app.py:30:80: E501 line too long (93 > 79 characters)
+app.py:65:52: W291 trailing whitespace
+app.py:66:5: E265 block comment should start with '# '
+app.py:66:80: E501 line too long (80 > 79 characters)
+app.py:67:5: E265 block comment should start with '# '
+app.py:69:1: W293 blank line contains whitespace
+app.py:70:1: E302 expected 2 blank lines, found 1
+app.py:78:9: E265 block comment should start with '# '
+app.py:146:5: E265 block comment should start with '# '
+app.py:146:80: E501 line too long (145 > 79 characters)
+app.py:149:5: E265 block comment should start with '# '
+app.py:149:54: W291 trailing whitespace
+app.py:150:5: E265 block comment should start with '# '
+app.py:150:80: E501 line too long (115 > 79 characters)
+app.py:152:79: E203 whitespace before ','
+app.py:152:80: E501 line too long (137 > 79 characters)
+app.py:152:105: E251 unexpected spaces around keyword / parameter equals
+app.py:152:123: E231 missing whitespace after ','
+app.py:155:9: E265 block comment should start with '# '
+app.py:156:9: E265 block comment should start with '# '
+app.py:157:80: E501 line too long (121 > 79 characters)
+app.py:157:106: E231 missing whitespace after ','
+app.py:159:9: E265 block comment should start with '# '
+app.py:159:80: E501 line too long (81 > 79 characters)
+app.py:159:82: W291 trailing whitespace
+app.py:160:9: E265 block comment should start with '# '
+app.py:161:13: E225 missing whitespace around operator
+app.py:165:5: E303 too many blank lines (2)
+app.py:171:1: E302 expected 2 blank lines, found 1
+app.py:181:44: E261 at least two spaces before inline comment
+app.py:182:20: F405 'parseRowFriends' may be undefined, or defined from star imports: model
+app.py:185:1: E302 expected 2 blank lines, found 1
+app.py:189:16: F405 'parseTopMovies' may be undefined, or defined from star imports: model
+app.py:192:1: E302 expected 2 blank lines, found 1
+app.py:196:16: F405 'parseAllMovies' may be undefined, or defined from star imports: model
+app.py:199:1: W293 blank line contains whitespace
+app.py:204:20: F405 'parseSession' may be undefined, or defined from star imports: model
+app.py:207:1: E302 expected 2 blank lines, found 1
+app.py:211:18: F405 'parseFriendsEmails' may be undefined, or defined from star imports: model
+app.py:214:1: E302 expected 2 blank lines, found 1
+app.py:214:44: E231 missing whitespace after ','
+app.py:214:53: E261 at least two spaces before inline comment
+app.py:214:80: E501 line too long (92 > 79 characters)
+app.py:217:1: W293 blank line contains whitespace
+app.py:218:36: E261 at least two spaces before inline comment
+app.py:220:60: E261 at least two spaces before inline comment
+app.py:220:80: E501 line too long (90 > 79 characters)
+app.py:221:22: F405 'constructNewMovielist' may be undefined, or defined from star imports: model
+app.py:221:58: E231 missing whitespace after ','
+app.py:222:46: E231 missing whitespace after ','
+app.py:229:1: E302 expected 2 blank lines, found 1
+app.py:229:42: E231 missing whitespace after ','
+app.py:229:51: E261 at least two spaces before inline comment
+app.py:229:80: E501 line too long (107 > 79 characters)
+app.py:231:21: W291 trailing whitespace
+app.py:234:29: F405 'constructNewSessionList' may be undefined, or defined from star imports: model
+app.py:234:69: E231 missing whitespace after ','
+app.py:234:80: E501 line too long (82 > 79 characters)
+app.py:235:53: E231 missing whitespace after ','
+app.py:236:44: E261 at least two spaces before inline comment
+app.py:237:19: F405 'parseFriendsEmails' may be undefined, or defined from star imports: model
+app.py:238:5: F405 'sendEmail' may be undefined, or defined from star imports: model
+app.py:243:41: E261 at least two spaces before inline comment
+app.py:245:1: E265 block comment should start with '# '
+app.py:249:1: W293 blank line contains whitespace
+app.py:250:5: E265 block comment should start with '# '
+app.py:255:5: E265 block comment should start with '# '
+app.py:255:80: E501 line too long (101 > 79 characters)
+app.py:256:12: F405 'constructUserList' may be undefined, or defined from star imports: model
+app.py:256:43: E231 missing whitespace after ','
+app.py:257:60: E251 unexpected spaces around keyword / parameter equals
+app.py:257:62: E251 unexpected spaces around keyword / parameter equals
+app.py:257:80: E501 line too long (143 > 79 characters)
+app.py:257:80: E251 unexpected spaces around keyword / parameter equals
+app.py:257:82: E251 unexpected spaces around keyword / parameter equals
+app.py:257:112: E251 unexpected spaces around keyword / parameter equals
+app.py:257:114: E251 unexpected spaces around keyword / parameter equals
+app.py:257:132: E251 unexpected spaces around keyword / parameter equals
+app.py:257:134: E251 unexpected spaces around keyword / parameter equals
+app.py:257:142: E202 whitespace before ')'
+app.py:258:5: E265 block comment should start with '# '
+app.py:260:5: E265 block comment should start with '# '
+app.py:263:40: E231 missing whitespace after ','
+app.py:263:49: E261 at least two spaces before inline comment
+app.py:263:50: E262 inline comment should start with '# '
+app.py:263:80: E501 line too long (101 > 79 characters)
+app.py:265:21: E261 at least two spaces before inline comment
+app.py:268:62: E261 at least two spaces before inline comment
+app.py:268:80: E501 line too long (92 > 79 characters)
+app.py:269:28: F405 'constructNewFriendList' may be undefined, or defined from star imports: model
+app.py:269:73: E231 missing whitespace after ','
+app.py:269:80: E501 line too long (96 > 79 characters)
+app.py:269:85: E231 missing whitespace after ','
+app.py:270:42: E231 missing whitespace after ','
+app.py:281:1: E302 expected 2 blank lines, found 1
+app.py:284:5: E265 block comment should start with '# '
+app.py:285:5: E265 block comment should start with '# '
+app.py:286:12: F405 'getTopMovies' may be undefined, or defined from star imports: model
+app.py:292:1: E303 too many blank lines (3)
+app.py:298:12: F405 'renderUserHome' may be undefined, or defined from star imports: model
+app.py:298:38: E231 missing whitespace after ','
+app.py:300:80: E501 line too long (89 > 79 characters)
+app.py:300:90: W291 trailing whitespace
+app.py:301:29: E127 continuation line over-indented for visual indent
+app.py:301:67: W291 trailing whitespace
+app.py:302:29: E127 continuation line over-indented for visual indent
+app.py:302:80: E501 line too long (85 > 79 characters)
+app.py:304:1: E302 expected 2 blank lines, found 1
+app.py:308:23: F405 'findMovies' may be undefined, or defined from star imports: model
+app.py:310:53: E251 unexpected spaces around keyword / parameter equals
+app.py:310:55: E251 unexpected spaces around keyword / parameter equals
+app.py:310:80: E501 line too long (101 > 79 characters)
+app.py:310:81: E251 unexpected spaces around keyword / parameter equals
+app.py:310:83: E251 unexpected spaces around keyword / parameter equals
+app.py:319:19: F405 'parseSession' may be undefined, or defined from star imports: model
+app.py:321:5: E265 block comment should start with '# '
+app.py:329:12: F405 'renderMovie' may be undefined, or defined from star imports: model
+app.py:330:52: E251 unexpected spaces around keyword / parameter equals
+app.py:330:54: E251 unexpected spaces around keyword / parameter equals
+app.py:330:71: E251 unexpected spaces around keyword / parameter equals
+app.py:330:73: E251 unexpected spaces around keyword / parameter equals
+app.py:330:80: E501 line too long (127 > 79 characters)
+app.py:330:93: E251 unexpected spaces around keyword / parameter equals
+app.py:330:95: E251 unexpected spaces around keyword / parameter equals
+app.py:330:117: E251 unexpected spaces around keyword / parameter equals
+app.py:330:119: E251 unexpected spaces around keyword / parameter equals
+app.py:332:1: E305 expected 2 blank lines after class or function definition, found 1
+2     E127 continuation line over-indented for visual indent
+1     E202 whitespace before ')'
+1     E203 whitespace before ','
+1     E225 missing whitespace around operator
+14    E231 missing whitespace after ','
+21    E251 unexpected spaces around keyword / parameter equals
+10    E261 at least two spaces before inline comment
+1     E262 inline comment should start with '# '
+18    E265 block comment should start with '# '
+9     E302 expected 2 blank lines, found 1
+2     E303 too many blank lines (2)
+1     E305 expected 2 blank lines after class or function definition, found 1
+1     E401 multiple imports on one line
+20    E501 line too long (93 > 79 characters)
+3     F401 'random' imported but unused
+1     F403 'from model import *' used; unable to detect undefined names
+16    F405 'parseRowFriends' may be undefined, or defined from star imports: model
+6     W291 trailing whitespace
+4     W293 blank line contains whitespace

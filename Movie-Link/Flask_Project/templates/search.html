@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  	<meta charset="utf-8"/>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename = 'sessions.js') }}"></script>
+    <script>
+     var temp = "{{popular}}";
+    </script>
+    <style></style>
+    <title>Search</title>
+  </head>
+
+  <body>
+    
+     <!--Source : https://getbootstrap.com/docs/4.0/components/navbar/-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand">MovieLink</a>
+         
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="/user_home">User home</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="/session_list">Upcoming sessions</a>
+               </li>
+               <li class="nav-item inactive">
+                  <a class="nav-link" href="/logout">Logout</a>
+               </li>
+            </ul>
+            
+            <ul class="navbar-nav mr-auto">
+               <li>
+                  <input type="text" placeholder="Movie Search" id="clientBox" />
+               </li>
+               <li>
+                  <a class="nav-link" id="movie_search" onclick="movieSearch()" href="">Movie Search</a>
+               </li>
+               <li>
+                  <input type="text" placeholder="Friend Search" id="clientBox2" />
+               </li>
+               <li>
+                  <a class="nav-link" id="friend_search" onclick="friendSearch()" href="">Friend Search</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+    
+    <div class="row">
+      <div class="container">
+        <h3> Found {{ movie_list| count }} matches </h3>
+      </div>
+      <div class="container">
+        <ul>
+	  {% for movie in movie_list %}
+	  <div class="movie-card" style="margin-bottom: 15px;">
+            <img src="{{ movie['cover url'] }}" alt="{{ movie['title'] }} poster" class="img-responsive">
+            <div class="text-center">
+		<h6>{{ movie.title|truncate(15)}}</h6>
+            </div>
+
+	    <form action="/movieView/{{movie['movieID']}}">
+	      <input type="submit" value="Go to movieInfo" />
+	    </form> 
+
+	  </div>
+	  {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+
+  

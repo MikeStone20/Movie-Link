@@ -1,0 +1,20 @@
+matrix:
+  include:
+    - language: python
+      python: 
+        - 3.7
+      install: 
+        - pip install --upgrade pip && pip install -r requirements.txt
+      script:
+        - coverage run --source=my_tests/,Flask_Project/ -m pytest my_tests/ # Run the tests and check for test coverage.
+        - coverage report 
+
+    - language: node_js
+      node_js:
+        - "node"
+      install:
+        - npm install
+      before_script:
+        - cd Flask_Project/
+      script:
+        - npm run test

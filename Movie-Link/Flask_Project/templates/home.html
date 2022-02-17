@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+   	<meta charset="utf-8"/>
+      <!-- JQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="{{ url_for('static', filename = 'sessions.js') }}"></script>
+      <style></style>
+      <title>Home</title>
+   </head>
+
+   <body>
+
+      <!--Source : https://getbootstrap.com/docs/4.0/components/navbar/-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand">MovieLink</a>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="/login">Google Login</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <div id="popular_movies">
+         <!-- need a way to build up existing grid from database? -->
+         <br>
+         Top Movies:
+         <ul>
+            {% for i in range(popular | count) %}
+            <li>{{ popular[i] }}
+               <img src={{ image_test[i] }} alt="movie_test">
+            </li>
+            {% endfor %}
+         </ul>
+      </div>
+
+      <div id="your_movies">
+         Sign in to see your movie and friend list..
+      </div>
+   </body>
+</html>

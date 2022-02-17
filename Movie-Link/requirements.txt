@@ -1,0 +1,15 @@
+
+###### Requirements without Version Specifiers is 'nose' w/ no quotes ######`
+gunicorn
+requests
+Flask==1.0.2
+oauthlib==3.0.1
+pyOpenSSL==19.0.0
+Flask-Login==0.4.1
+flake8
+flake8-bugbear
+coverage
+git+https://github.com/alberanid/imdbpy
+html5validator
+
+###### Requirements with Version Specifiers is 'docopt == 0.6.1' ######`

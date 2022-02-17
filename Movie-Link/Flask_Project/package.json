@@ -1,0 +1,24 @@
+{
+  "name": "jest_testing",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "For front end unit testing",
+  "main": "sessions.test.js",
+  "scripts": {
+    "test": "jest && jest --collectCoverage",
+    "type": "module"
+  },
+  "repository": {
+    "url": "GUO"
+  },
+  "author": "Christian",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.4",
+    "jquery": "^3.5.1"
+  }
+}

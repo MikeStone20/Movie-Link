@@ -1,0 +1,46 @@
+user.py:7:1: E303 too many blank lines (3)
+user.py:8:80: E501 line too long (100 > 79 characters)
+user.py:13:23: E225 missing whitespace around operator
+user.py:14:22: E225 missing whitespace around operator
+user.py:15:24: E225 missing whitespace around operator
+user.py:16:25: E225 missing whitespace around operator
+user.py:17:5: E301 expected 1 blank line, found 0
+user.py:27:80: E501 line too long (155 > 79 characters)
+user.py:27:104: E251 unexpected spaces around keyword / parameter equals
+user.py:27:125: E251 unexpected spaces around keyword / parameter equals
+user.py:27:146: E251 unexpected spaces around keyword / parameter equals
+user.py:27:148: E251 unexpected spaces around keyword / parameter equals
+user.py:39:1: W293 blank line contains whitespace
+user.py:41:5: E301 expected 1 blank line, found 0
+user.py:42:80: E501 line too long (92 > 79 characters)
+user.py:45:80: E501 line too long (107 > 79 characters)
+user.py:47:80: E501 line too long (90 > 79 characters)
+user.py:50:5: E301 expected 1 blank line, found 0
+user.py:60:5: E301 expected 1 blank line, found 0
+user.py:65:13: E123 closing bracket does not match indentation of opening bracket's line
+user.py:69:5: E301 expected 1 blank line, found 0
+user.py:74:13: E123 closing bracket does not match indentation of opening bracket's line
+user.py:78:5: E301 expected 1 blank line, found 0
+user.py:79:30: E231 missing whitespace after ','
+user.py:82:80: E501 line too long (94 > 79 characters)
+user.py:82:95: W291 trailing whitespace
+user.py:83:13: E123 closing bracket does not match indentation of opening bracket's line
+user.py:88:5: E301 expected 1 blank line, found 0
+user.py:89:37: E231 missing whitespace after ','
+user.py:92:80: E501 line too long (99 > 79 characters)
+user.py:92:100: W291 trailing whitespace
+user.py:93:13: E123 closing bracket does not match indentation of opening bracket's line
+user.py:98:5: E301 expected 1 blank line, found 0
+user.py:99:26: E231 missing whitespace after ','
+user.py:102:80: E501 line too long (97 > 79 characters)
+user.py:102:98: W291 trailing whitespace
+user.py:103:13: E123 closing bracket does not match indentation of opening bracket's line
+5     E123 closing bracket does not match indentation of opening bracket's line
+4     E225 missing whitespace around operator
+3     E231 missing whitespace after ','
+4     E251 unexpected spaces around keyword / parameter equals
+8     E301 expected 1 blank line, found 0
+1     E303 too many blank lines (3)
+8     E501 line too long (100 > 79 characters)
+3     W291 trailing whitespace
+1     W293 blank line contains whitespace

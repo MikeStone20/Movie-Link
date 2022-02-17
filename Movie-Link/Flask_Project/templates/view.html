@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+   	<meta charset="utf-8"/>
+      <!-- JQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="{{ url_for('static', filename = 'view.js') }}"></script>
+      <script src="{{ url_for('static', filename = 'sessions.js') }}"></script>
+      <script>
+         var temp = "{{popular}}";
+      </script>
+      <title>View</title>
+      
+      <style>
+       #title{
+         color:black;
+         text-align: center;
+         padding-bottom: 10px;
+         padding-top: 10px;
+         font-size: 24px;
+       }
+       .top{
+         background-color: lightblue;
+         height:60px;
+       }
+       .warning{
+         background-color: red;
+         color:white;
+       }
+       #reamsWarn{
+         display: inline-block;
+       }
+       #clientWarn{
+         display: inline-block;
+       }
+       .divStructure{
+         display: inline-block;
+       }
+       .center{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+	 
+       }
+       .submitButtons{
+         visibility: hidden;
+       }
+       #undo{
+         visibility: hidden;
+       }
+      </style>
+   </head>
+
+   <body>
+
+     <!--Source : https://getbootstrap.com/docs/4.0/components/navbar/-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand">MovieLink</a>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="/user_home">User home</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="/session_list">Upcoming sessions</a>
+               </li>
+               <li class="nav-item inactive">
+                  <a class="nav-link" href="/logout">Logout</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+               <li>
+                  <input type="text" placeholder="Movie Search" id="clientBox" />
+
+               </li>
+               <li>
+                  <a class="nav-link" id="movie_search" onclick="movieSearch()" href="">Movie Search</a>
+               </li>
+               <li>
+                  <input type="text" placeholder="Friend Search" id="clientBox2" />
+               </li>
+               <li>
+                  <a class="nav-link" id="friend_search" onclick="friendSearch()" href="">Friend Search</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+     <div class="container-fluid">
+       <div class="row">
+
+         <div class="col-md-12 divStructure" id="title">
+           <!-- var 1: img title -->
+           <h2 id = "mName">{{movie_title}}</h2>
+         </div>
+       </div>
+
+       <div class="row">
+
+         <div class="col-md-12">
+           <!-- var2: imgurl -->
+           <img src= "{{img_url }}" class= "center" id="moviePic" alt="">
+         </div>
+       </div>
+       
+
+       <div class="row">
+         <div class="col-md-1">
+           Info:
+         </div>
+         <div class="col-md-11" id="info">
+           <!-- var3: movie_info -->    
+           {{ movie_info | truncate(100)}}    
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col-md-1">
+           Released:
+         </div>
+	 
+         <div class="col-md-11" id="date">
+           <!-- var4: release date -->    
+           {{ release_date }}
+         </div>
+       </div>
+
+
+       <div class="row">
+         <div class="col-md-1">
+
+           <button id="wishListButton" onclick="addWishList()">Add to Wish List</button>
+	   
+	   <form name="sessionsForm">
+	     <br> <a> Session form </a> <br>
+	     <label for="zoom">Insert your own Zoom link:</label> <br>
+	     <input type="text" id="zoom" name="zoom"> <br>
+	     <input type="date" id="sessionDate" name="sessionDate">
+	     <input type="time" id="time" name="time"> <br>
+	     <button type="button" id="makeSession" onclick="addSession()">Create Session</button>
+	     <br>
+             <button id="undo"> Cancel Add to Sessions </button>
+	   </form>
+         </div>
+       </div>
+
+     </div>
+     
+   </body>
+</html>
